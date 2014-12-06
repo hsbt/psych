@@ -8,3 +8,6 @@ before_script:
   - gem install hoe
   - gem install rake-compiler
 script: rake isolate test
+matrix:
+  allow_failures:
+    - rvm: 1.9.2
